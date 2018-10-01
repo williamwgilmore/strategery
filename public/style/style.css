@@ -1,0 +1,18 @@
+.board {
+	width: 1000px;
+	border: 1px solid black;
+	margin: 20px auto;
+}
+
+.boardRow {
+	height: 100px;
+	width: 1000px;
+}
+
+.boardSpace {
+	height: 100px;
+	width: 100px;
+	border: 1px black solid;
+	white-space: nowrap;
+	display: inline-block;
+}
