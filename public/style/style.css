@@ -1,4 +1,4 @@
-.board {
+#board {
 	width: 1000px;
 	border: 1px solid black;
 	margin: 20px auto;
@@ -15,4 +15,25 @@
 	border: 1px black solid;
 	white-space: nowrap;
 	display: inline-block;
+}
+
+/*Board Spaces*/
+.desert {
+	background-color: tan;
+}
+
+.grass {
+	background-color: lightgreen;
+}
+
+.mountain {
+	background-color: gray;
+}
+
+.water {
+	background-color: lightblue;
+}
+
+.forest {
+	background-color: darkgreen;
 }
