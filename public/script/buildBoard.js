@@ -3,17 +3,17 @@ let boardHtml = '';
 for (let i=0; i<10; i++){
 	boardHtml += ('<div class="boardRow">');
 	for (let j=0; j<10; j++){
-		boardHtml += ('<div class="boardSpace desert row' + i + 'Space' + j + '" data-row="' + i +'" data-space="' + j + '">Row: ' + i + '</br>Space: ' + j + '</div>');
+		boardHtml += ('<div class="boardSpace desert row' + i + 'Space' + j + '" data-row="' + i +'" data-space="' + j + '"></div>');
 	}
 	boardHtml += ('</div>');
 }
 
 $('#board').html(boardHtml);
 
-let water = 5;
-let forest = 10;
-let mountain = 4;
-let grass = 12;
+let water = 20;
+let forest = 20;
+let mountain = 5;
+let grass = 30;
 
 let totalSpaces = water + forest + mountain + grass;
 

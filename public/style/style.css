@@ -1,17 +1,27 @@
+#menu {
+	height: 750px;
+	width: 375px;
+	background-color: lightgray;
+	white-space: nowrap;
+	display: inline-block;
+}
+
 #board {
-	width: 1000px;
+	width: 750px;
 	border: 1px solid black;
-	margin: 20px auto;
+	margin: 0;
+	white-space: nowrap;
+	display: inline-block;
 }
 
 .boardRow {
-	height: 100px;
-	width: 1000px;
+	height: 75px;
+	width: 750px;
 }
 
 .boardSpace {
-	height: 100px;
-	width: 100px;
+	height: 75px;
+	width: 75px;
 	border: 1px black solid;
 	white-space: nowrap;
 	display: inline-block;
