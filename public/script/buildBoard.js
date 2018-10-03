@@ -3,7 +3,7 @@ let boardHtml = '';
 for (let i=0; i<10; i++){
 	boardHtml += ('<div class="boardRow">');
 	for (let j=0; j<10; j++){
-		boardHtml += ('<div class="boardSpace row' + i + 'Col' + j + ' desert" data-row="' + i +'" data-col="' + j + '"></div>');
+		boardHtml += ('<div class="boardSpace row' + i + 'Col' + j + ' desert" data-type="desert" data-row="' + i +'" data-col="' + j + '"></div>');
 	}
 	boardHtml += ('</div>');
 }
@@ -37,21 +37,25 @@ for (let k=0; k < totalSpaces; k++){
 function chooseSpace(space){
 	if (water > 0){
 		space.addClass('water');
+		space.data('type', 'water');
 		water --;
 	}
 
 	else if (forest > 0){
 		space.addClass('forest');
+		space.data('type', 'forest');
 		forest --;
 	}
 
 	else if (mountain > 0){
 		space.addClass('mountain');
+		space.data('type', 'mountain');
 		mountain--;
 	}
 
 	else if (grass > 0){
 		space.addClass('grass');
+		space.data('type', 'grass');
 		grass--;
 	}
 }

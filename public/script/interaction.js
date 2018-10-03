@@ -18,7 +18,10 @@ function openBuildMenu(){
 function showSpaceInfo(space){
 	let thisSpace = '';
 
-	let row = space.data('row');
-	let col = space.data('col');
+	let row = space.data('row') + 1;
+	let col = space.data('col') + 1;
+	let type = space.data('type');
+
+	thisSpace = 'Row: ' + row + '</br>Col: ' + col + '</br>Type: ' + type; 
 	$('#spaceInfo').html(thisSpace);
 }
