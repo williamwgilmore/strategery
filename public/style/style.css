@@ -14,6 +14,12 @@
 	display: inline-block;
 }
 
+#spaceInfo {
+	margin: 5px;
+	padding: 5px;
+	background-color: white;
+}
+
 .boardRow {
 	height: 75px;
 	width: 750px;
@@ -22,9 +28,13 @@
 .boardSpace {
 	height: 75px;
 	width: 75px;
-	border: 1px black solid;
+	/*border: 1px black solid;*/
 	white-space: nowrap;
 	display: inline-block;
+}
+
+.selectedSpace {
+	border: 1px dashed white;
 }
 
 /*Board Spaces*/
@@ -46,4 +56,9 @@
 
 .forest {
 	background-color: darkgreen;
+}
+
+.town {
+	border: 5px lightgreen solid;
+	background-color: brown;
 }
