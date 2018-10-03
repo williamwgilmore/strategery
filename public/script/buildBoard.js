@@ -3,7 +3,7 @@ let boardHtml = '';
 for (let i=0; i<10; i++){
 	boardHtml += ('<div class="boardRow">');
 	for (let j=0; j<10; j++){
-		boardHtml += ('<div class="boardSpace desert row' + i + 'Space' + j + '" data-row="' + i +'" data-space="' + j + '"></div>');
+		boardHtml += ('<div class="boardSpace row' + i + 'Col' + j + ' desert" data-row="' + i +'" data-col="' + j + '"></div>');
 	}
 	boardHtml += ('</div>');
 }
@@ -19,8 +19,8 @@ let totalSpaces = water + forest + mountain + grass;
 
 for (let k=0; k < totalSpaces; k++){
 	let selectedRow = Math.floor(Math.random() * 10);
-	let selectedSpace = Math.floor(Math.random() * 10);
-	let coord = '.row' + selectedRow + 'Space' + selectedSpace;
+	let selectedCol = Math.floor(Math.random() * 10);
+	let coord = '.row' + selectedRow + 'Col' + selectedCol;
 	let randomSpaceCoord = $('#board').find(coord);
 
 	//Spaces that haven't been selected yet will be desert
